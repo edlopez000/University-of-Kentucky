@@ -1,10 +1,11 @@
 import './App.css';
+import { ChakraProvider } from "@chakra-ui/react"
 
 function App() {
   return (
-    <div className="App">
-     <h1>Hello from the app.js component</h1>
-    </div>
+    <ChakraProvider >
+      <h1>Hello from Chakra</h1>
+    </ChakraProvider>
   );
 }
 
