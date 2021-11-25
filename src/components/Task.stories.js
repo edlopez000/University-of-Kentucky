@@ -3,7 +3,11 @@ import Task from './Task'
 
 export default {
     title: 'Task',
-    component: Task
+    component: Task,
+    argTypes: { 
+        onArchiveTask: {action: "archiveTask"},
+        onPinTask: {action: 'pinTask'}
+    }
 }
 
 const Template = args => <Task {...args} />
