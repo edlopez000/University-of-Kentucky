@@ -7,8 +7,15 @@ export default function Navbar() {
             <Box 
              w="100%"
              h="17%"
-             bg="brand.300">
-                <Text>Resources</Text>
+             bg="brand.300"
+             d='flex'
+             justifyContent="flex-end"
+             pr="10em">
+                <Link>Resources</Link>
+                <Link
+                 pl="1em">MyUK</Link>
+                <Link
+                 pl="1em">Search</Link>
             </Box>
 			<Box
              w="83%"
