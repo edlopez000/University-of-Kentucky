@@ -10,7 +10,8 @@ export default function Navbar() {
              bg="brand.300"
              d='flex'
              justifyContent="flex-end"
-             pr="10em">
+             pr="10em"
+             alignItems="center">
                 <Link>Resources</Link>
                 <Link
                  pl="1em">MyUK</Link>
@@ -39,7 +40,8 @@ export default function Navbar() {
                  d='flex'
                  flexDirection='row'
                  justifyContent="space-between"
-                 pt="1em">
+                 pt="1em"
+                 fontWeight="extrabold">
                     <ListItem>
                         <Link>About UK</Link>
                     </ListItem>
