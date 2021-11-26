@@ -23,7 +23,7 @@ export default function Navbar() {
              h="80%">
 				<Box h="70%" d="flex" justifyContent="space-between">
 					<Text color="brand.100">University of Kentucky</Text>
-					<Box w="30%" d="flex" justifyContent="space-around" alignItems="end" fontWeight="extrabold">
+					<Box w="30%" d="flex" justifyContent="space-around" alignItems="end" fontWeight="extrabold" pb="1em">
 						<Link>Apply</Link>
 
 						<Link>Give</Link>
@@ -38,7 +38,8 @@ export default function Navbar() {
                 <List 
                  d='flex'
                  flexDirection='row'
-                 justifyContent="space-between">
+                 justifyContent="space-between"
+                 pt="1em">
                     <ListItem>
                         <Link>About UK</Link>
                     </ListItem>
