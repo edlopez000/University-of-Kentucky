@@ -1,10 +1,10 @@
 import React from 'react';
-import { Box, Text, HStack, VStack, List, Link, ListItem } from '@chakra-ui/react';
+import { Box, Text, HStack, VStack, Link } from '@chakra-ui/react';
 
 export default function Footer() {
 	return (
-		<Box bg="brand.900" mt="35vh" h="10em">
-			<Box w="100%" d="flex" justifyContent="center" pt="1em">
+		<Box bg="brand.900" mt="35vh" h="11em" d="flex" alignItems="center">
+			<Box w="100%" d="flex" justifyContent="center" alignContent="center">
 				<VStack>
 					<Text fontWeight="400" fontSize="4xl">
 						University of Kentucky
