@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Header } from './Header';
+import Navbar from "../components/Navbar"
 
 export default {
-  title: 'Example/Header',
-  component: Header,
+  title: 'UK Navbar',
+  component: Navbar,
 };
 
-const Template = (args) => <Header {...args} />;
+const Template = (args) => <Navbar {...args} />;
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
