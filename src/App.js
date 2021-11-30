@@ -17,7 +17,7 @@ function App() {
        >
         <Navbar />
         <Home />
-        {/* <LoginForm /> */}
+        <LoginForm />
         <Footer />
       </Box>
     </ChakraProvider>

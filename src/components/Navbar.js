@@ -3,7 +3,7 @@ import { Box, Text, Link, List, ListItem } from '@chakra-ui/react';
 
 export default function Navbar() {
 	return (
-		<Box w="100%" bg="orange" h="15em" bg="brand.900">
+		<Box w="100%" bg="orange" minH="250px" h="15em" bg="brand.900">
             <Box 
              w="100%"
              h="17%"
