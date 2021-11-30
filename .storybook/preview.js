@@ -1,4 +1,4 @@
-import '../src/index.css'
+// import '../src/index.css'
 
 // export const parameters = {
 //   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -10,6 +10,19 @@ import '../src/index.css'
 //   },
 // }
 
+
+import React from 'react'
+import { addDecorator} from '@storybook/react'
+import { ChakraProvider } from '@chakra-ui/react';
+import theme from "../src/theme"
+
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
 };
+
+addDecorator((storyFn) => (
+  <ChakraProvider resetCSS={false}>
+    {storyFn()}
+  </ChakraProvider>
+))
+
