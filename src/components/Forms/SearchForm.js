@@ -1,12 +1,23 @@
 import React from 'react'
-import {FormControl, FormLabel, Input, Text} from '@chakra-ui/react'
+import {FormControl, FormLabel, Input, Text, Button} from '@chakra-ui/react'
 
-export function SearchForm() {
+export default function SearchForm() {
+    const [search, setSearch] = React.useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const searchParams = []
+
+        searchParams.push(search)
+        setSearch('')
+        console.log(searchParams)
+    }
     return (
-        <FormControl>
+        <FormControl maxW="400px">
             <FormLabel>Search Form</FormLabel>
-            <Input type="text" placeholder='UserName'/>
+            <Input value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder='UserName'/>
             <Text fontSize='sm'>Enter your UK D8 username.</Text>
+            <Button type="submit" onClick={handleSubmit}>Submit</Button>
         </FormControl>
     )
 }

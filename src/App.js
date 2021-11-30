@@ -5,6 +5,7 @@ import Navbar from "../src/components/Navbar"
 import Home from "../src/components/homePage/Home"
 import Footer from './components/Footer';
 import LoginForm from './components/Forms/LoginForm'
+import SearchForm from './components/Forms/SearchForm'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Navbar />
         <Home />
         <LoginForm />
+        <SearchForm />
         <Footer />
       </Box>
     </ChakraProvider>
