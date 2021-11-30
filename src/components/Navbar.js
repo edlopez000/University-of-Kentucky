@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Text, Link, List, ListItem } from '@chakra-ui/react';
+import { Box, Text, Link, List, ListItem, Image, Icon } from '@chakra-ui/react';
+import UkLogo from './UkLogo'
 
 export default function Navbar() {
 	return (
@@ -23,7 +24,6 @@ export default function Navbar() {
              ml="8em"
              h="80%">
 				<Box h="70%" d="flex" justifyContent="space-between">
-					<Text color="brand.100">University of Kentucky</Text>
 					<Box w="30%" d="flex" justifyContent="space-around" alignItems="end" fontWeight="extrabold" pb="1em">
 						<Link>Apply</Link>
 

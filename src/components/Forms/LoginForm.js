@@ -5,15 +5,24 @@ import {FormControl, FormLabel, Input, Text, Button} from '@chakra-ui/react'
 export function LoginForm() {
     const [userName, setUserName] = React.useState('')
     const [password, setPassWord] = React.useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const userData = []
+        userData.push(userName, password)
+        setUserName('')
+        setPassWord('')
+        console.log(userData)
+    }
     return (
-        <FormControl>
+        <FormControl w="400px">
             <FormLabel>UserName</FormLabel>
-            <Input value={userName} type="text" placeholder='UserName'/>
+            <Input onChange={ (e) => setUserName(e.target.value)} value={userName} type="text" placeholder='UserName'/>
             <Text fontSize='sm'>Enter your UK D8 username.</Text>
             <FormLabel>Password</FormLabel>
-            <Input value={password} type="text" placeholder='password'/>
+            <Input onChange={ (e) => setPassWord(e.target.value)} value={password} type="text" placeholder='password'/>
             <Text fontSize='sm'>Enter the password that accompanies your username.</Text>
-            <Button bg='brand.900'>Log In</Button>
+            <Button type="submit" onClick={handleSubmit} bg='brand.900'>Log In</Button>
         </FormControl>
     )
 }
