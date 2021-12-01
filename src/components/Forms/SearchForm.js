@@ -1,5 +1,6 @@
 import React from 'react'
-import {FormControl, FormLabel, Input, Text, Button} from '@chakra-ui/react'
+import {FormControl, FormLabel, Input, Text, Button, HStack} from '@chakra-ui/react'
+import {SearchIcon} from "@chakra-ui/icons"
 
 export default function SearchForm() {
     const [search, setSearch] = React.useState('')
@@ -15,9 +16,12 @@ export default function SearchForm() {
     return (
         <FormControl maxW="400px">
             <FormLabel>Search Form</FormLabel>
+            <HStack>
             <Input value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder='UserName'/>
-            <Text fontSize='sm'>Enter your UK D8 username.</Text>
-            <Button type="submit" onClick={handleSubmit}>Submit</Button>
+            <Button bg="brand.900" type="submit" onClick={handleSubmit}>
+            <SearchIcon /> 
+            </Button>
+            </HStack>
         </FormControl>
     )
 }
