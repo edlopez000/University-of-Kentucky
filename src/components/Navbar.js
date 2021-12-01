@@ -4,7 +4,7 @@ import UkLogo from './UkLogo'
 
 export default function Navbar() {
 	return (
-		<Box w="100%" bg="orange" minH="250px" h="15em" bg="brand.900">
+		<Box w="100%" bg="orange" minH="250px" h="15em" bg="brand.900" mb="2em">
             <Box 
              w="100%"
              h="17%"
