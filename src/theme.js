@@ -15,8 +15,11 @@ const theme = extendTheme({
             300: "#041E42",
             900: "#0033A0"
         },
-        buttons: {
-            main: "#0033A0"
+        teasers: {
+            100: "#1f2c5e"
+        },
+        hover: {
+            100: "#1897d4"
         }
     }
 })

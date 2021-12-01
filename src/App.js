@@ -4,6 +4,7 @@ import theme from './theme';
 import Navbar from "../src/components/Navbar"
 import PersonTeaser from './components/Teasers/PersonTeaser'
 import Footer from './components/Footer'
+import MicroTeaser from './components/Teasers/MicroTeaser';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
        
        >
         <Navbar />
-        <PersonTeaser />
+        <MicroTeaser />
         <Footer />
       </Box>
     </ChakraProvider>
