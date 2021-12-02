@@ -5,7 +5,7 @@ import Navbar from "../src/components/Navbar"
 import PersonTeaser from './components/Teasers/PersonTeaser'
 import Footer from './components/Footer'
 import MicroTeaser from './components/Teasers/MicroTeaser';
-
+import EventSlabs from "./components/EditorialSlabs/EventSlabs"
 
 function App() {
   const img = "https://magicyeti.us/600/400/*/"
@@ -20,7 +20,7 @@ function App() {
        
        >
         <Navbar />
-        <MicroTeaser />
+        <EventSlabs />
         <Footer />
       </Box>
     </ChakraProvider>

@@ -1,5 +1,5 @@
 import React from "react"
-import {HStack, VStack, Box, Image, Text, Button, Link} from "@chakra-ui/react"
+import {HStack, Box, Image, Text, Button, Link} from "@chakra-ui/react"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import PropTypes from "prop-types"
 
@@ -24,8 +24,6 @@ export default function MicroTeaser({
                 <ChevronRightIcon />
                 <Link _hover={{textDecoration: 'none', color: "hover.100"}}>I am a Link</Link>
                 </HStack>
-     
-                
             </Box>
         </HStack>
         </Box>
