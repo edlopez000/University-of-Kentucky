@@ -20,7 +20,11 @@ const theme = extendTheme({
         },
         hover: {
             100: "#1897d4"
+        },
+        sideNavSection: {
+            100: " #B1C9E8"
         }
+
     }
 })
 

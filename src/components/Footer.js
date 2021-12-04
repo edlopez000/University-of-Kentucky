@@ -3,7 +3,7 @@ import { Box, Text, HStack, VStack, Link } from '@chakra-ui/react';
 
 export default function Footer() {
 	return (
-		<Box bg="brand.900" mt="35vh" minH="150px" h="11em" d="flex" alignItems="center">
+		<Box bg="brand.900" mt="35vh" minH="150px" h="11em" d="flex" alignItems="center" alignContent="flex-end">
 			<Box w="100%" d="flex" justifyContent="center" alignContent="center">
 				<VStack>
 					<Text fontWeight="400" fontSize="4xl">

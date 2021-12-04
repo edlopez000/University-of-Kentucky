@@ -1,3 +1,8 @@
+// Current Glob Problems
+// 1) Storybook is Intended for stories components to be in same file as its react counterpart.... This is customizable
+
+
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -8,7 +13,8 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
-    "@chakra-ui/react"
+    "@chakra-ui/react",
+    '@snek-at/storybook-addon-chakra-ui'
   ]
 }
 
