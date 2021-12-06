@@ -3,8 +3,8 @@ import {FormControl, FormLabel, Input, Text, Button, HStack} from '@chakra-ui/re
 import {SearchIcon} from "@chakra-ui/icons"
 
 export default function SearchForm() {
-    const [search, setSearch] = React.useState('')
 
+    const [search, setSearch] = React.useState('')
     const handleSubmit = (e) => {
         e.preventDefault()
         const searchParams = []

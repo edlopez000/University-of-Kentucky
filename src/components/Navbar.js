@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Text, Link, List, ListItem, Image, Icon } from '@chakra-ui/react';
-import UkLogo from './UkLogo'
+import { Box, Link, List, ListItem } from '@chakra-ui/react';
 
 export default function Navbar() {
 	return (
