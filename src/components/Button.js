@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 import './button.css';
 
 
-export const CButton = ({...props}) => {
+
+export default function CButton({...props}) {
   return (
-    <Button
+        <Button
      bg="brand.100" 
      {...props}
      >
@@ -14,6 +15,17 @@ export const CButton = ({...props}) => {
     </Button>
   )
 }
+
+// export const CButton = ({...props}) => {
+//   return (
+//     <Button
+//      bg="brand.100" 
+//      {...props}
+//      >
+//       Click Me
+//     </Button>
+//   )
+// }
 
 CButton.propTypes = {
   onClick: PropTypes.func
