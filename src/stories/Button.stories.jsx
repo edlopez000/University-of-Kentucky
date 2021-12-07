@@ -1,22 +1,43 @@
-import NButton from "../components/Button"
+import React from 'react';
 
+import { CButton } from '../components/Button';
+
+// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-    title: 'Button',
-    component: NButton,
-    argTypes: {OnClick: {action: "onClick"}}
-}
+  title: 'Example/Button',
+  component: CButton,
+  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+};
 
-const Template = args => <NButton {...args} />
+// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+const Template = (args) => <CButton {...args} />;
 
-export const Success = Template.bind({})
+export const Main = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Main.args = {
+  primary: true,
+  label: 'Button',
+};
 
-Success.args = {
-    background: 'red',
-    size: "small",
-    onClick: function(e) {
-        console.log(e.target.value)
-    }
-}
+export const Secondary = Template.bind({});
+Secondary.args = {
+  label: 'Button',
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  size: 'large',
+  label: 'Button',
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  size: 'small',
+  label: 'Button',
+};
 
 
 

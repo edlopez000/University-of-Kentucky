@@ -15,7 +15,8 @@ module.exports = {
     "@storybook/preset-create-react-app",
     "@chakra-ui/react",
     '@snek-at/storybook-addon-chakra-ui'
-  ]
+  ],
+  "framework": "@storybook/react"
 }
 
 // const path = require("path");
