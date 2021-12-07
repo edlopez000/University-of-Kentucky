@@ -3,7 +3,7 @@ import {FormControl, FormLabel, Input, Text, Button} from '@chakra-ui/react'
 import PropTypes from "prop-types"
 
 
-export function LoginForm() {
+export function LoginForm({...props}) {
 
     const [userName, setUserName] = React.useState('')
     const [password, setPassWord] = React.useState('')
@@ -19,7 +19,7 @@ export function LoginForm() {
     }
 
     return (
-        <FormControl w="400px">
+        <FormControl w="400px" {...props} >
             <FormLabel color="brand.100">UserName</FormLabel>
             <Input color="brand.100" onChange={ (e) => setUserName(e.target.value)} value={userName} type="text" placeholder='UserName'/>
             <Text color="brand.100" fontSize='sm'>Enter your UK D8 username.</Text>
@@ -36,6 +36,8 @@ LoginForm.propTypes = {
     password: PropTypes.string.isRequired,
     onClick: PropTypes.func
 }
+
+
 
 export default LoginForm
 
